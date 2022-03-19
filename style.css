@@ -43,10 +43,10 @@ body {
     transform-origin: right center;
 }
 
-.parent:active .right {
+.parent:hover .right {
     transform: perspective(2000px) rotateY(145deg);
 }
 
-.parent:active .left {
+.parent:hover .left {
     transform: perspective(2000px) rotateY(-145deg);
 }
