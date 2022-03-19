@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('./stena_kirpich_kirpichnyj_142654_1920x1080.jpg');
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    border: 5px solid rgb(105, 39, 39);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    background-image: url('./g02-1.jpg');
+    background-repeat: no-repeat;
+}
+
+.demo {
+    transition: transform 1s;
+    border: 10px ridge rgb(173, 0, 0);
+    background-color: rgb(52, 243, 243, 0.3);
+    width: 100%;
+}
+
+
+.parent .left {
+    transform-origin: center left;
+}
+
+.parent .right {
+    transform-origin: right center;
+}
+
+.parent:active .right {
+    transform: perspective(2000px) rotateY(145deg);
+}
+
+.parent:active .left {
+    transform: perspective(2000px) rotateY(-145deg);
+}
